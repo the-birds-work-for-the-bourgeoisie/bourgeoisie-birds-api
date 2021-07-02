@@ -2,15 +2,21 @@ from typing import List
 
 
 def validate_data_keys(data, keys: List[str]) -> bool:
+    """ check if each key has one value
+    """
     return all(map(lambda k: k in data and len(data[k]) == 1, keys))
 
 def validate_initials(initials: str) -> str or None:
+    """ check if initials is valid, returns the formatted initials 
+    """
     initials = initials.strip().upper()
     if len(initials) == 3 and initials.isascii() and initials.isalpha():
         return initials
     return None
 
 def validate_score(score: str) -> int or None:
+    """ check if score is a number, returns the parsed number
+    """
     score = score.strip()
     if score.isdigit() and len(score) < 10:
         return int(score)
