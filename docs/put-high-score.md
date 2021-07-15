@@ -1,4 +1,4 @@
-# Wake Up The Heroku Server
+# Give High Scores To The Heroku Server
 
 ### /high-score
 Inserts a score into the database and returns if there was an error
