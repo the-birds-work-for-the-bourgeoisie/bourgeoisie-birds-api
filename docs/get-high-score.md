@@ -1,4 +1,4 @@
-# Wake Up The Heroku Server
+# Get High Scores From The Heroku Server
 
 ### /high-score
 Returns a JSON array of the highest high score data for displaying the score board
